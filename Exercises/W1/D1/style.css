@@ -1,0 +1,99 @@
+/*Exercise 2	*/
+#ex1{
+	background-color: rgba(0,150,0,0.20);
+	border-color: green;
+	border-style: solid;
+	padding: 10px;
+	border-width: 4px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	margin-right: 150px;
+	margin-left: 80px;
+}
+
+/*Exercise 3	*/
+#flag1{
+	display: inline-block;
+	height: 100px;
+	width: 50px;
+	border-color: blue;
+	background-color: blue;
+	margin-left: 80px;
+}
+
+#flag2{
+	display: inline-block;
+	height: 100px;
+	width: 50px;
+	border-color: white;
+	background-color: white;
+	margin-left: 0px;
+}
+
+
+#flag3{
+	display: inline-block;
+	height: 100px;
+	width: 50px;
+	border-color: red;
+	background-color: red;
+	margin-left: 0px;
+}
+
+/*Exercise 4	*/
+#box1{
+	position: static;
+	display: inline-block;
+	height: 100px;
+	width: 300px;
+	border-color: white;
+	border-style: double;
+	background-color: gray;
+	margin-left: 80px;
+}
+
+#box2{
+	position: relative;
+	display: inline-block;
+	height: 60px;
+	width: 40px;
+	border-color: cyan;
+	background-color: cyan;
+	margin-top: 5px;
+}
+
+
+#box3{
+	position: relative;
+	display: inline-block;
+	height: 60px;
+	width: 40px;
+	border-color: orange;
+	background-color: orange;
+	margin-top: 7px;
+	margin-left: 15px;
+}
+
+/*Exercise 5	*/
+.bluetext{
+	color:blue;
+}
+
+.hoverbold:hover{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.back1{
+	background-color: pink;
+	color:white;
+}
+
+.back2{
+	background-color: cyan;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin: 10px 10px 10px 10px;
+}

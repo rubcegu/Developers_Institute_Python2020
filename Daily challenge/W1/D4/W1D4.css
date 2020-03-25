@@ -1,0 +1,63 @@
+*{
+  background-color: rgb(253,253,253)
+}
+section {
+  display:flex; 
+  flex-direction: row;
+}
+
+div{
+  padding: 5px;
+  margin: 1px;
+}
+
+.div1 {
+  background-color: rgb(1255,124,59);
+}
+
+.div2 {
+  background-color: rgb(232,178,123);
+}
+
+.div3 {
+  background-color: rgb(148,38,38);
+}
+
+#vertical {
+  display:flex; 
+  flex-direction: column;
+
+}
+
+.diva {
+  background-color: rgb(215,215,215);
+}
+
+.divb {
+  background-color: rgb(181,181,181);
+}
+
+.divc {
+  background-color: rgb(117,117,117);
+}
+.divd {
+  background-color: rgb(0,0,0);
+}
+
+.div4 {
+  background-color: rgb(255,255,255);
+  margin: 0px;
+  padding: 5.255px;
+}
+
+.div5 {
+  background-color: rgb(232,151,151);
+  margin: 0px;
+  padding: 5.255px;
+}
+
+.div6 {
+  background-color: rgb(217,72,72);
+  margin: 0px;
+  padding: 5.255px;
+}
