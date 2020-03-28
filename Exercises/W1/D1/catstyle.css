@@ -1,0 +1,30 @@
+
+.grow:hover
+{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+}
+
+section {
+  display:flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.div1 {
+	width: 100%;
+	text-align: center;
+	background-color: rgba(225,225,225,0.5);
+}
+
+.div2 {
+	width: 50%;
+	text-align: center;
+}
+
+.div3 {
+	width: 50%;
+	text-align: left;
+	background-color: rgba(225,225,225,0.5);
+}
