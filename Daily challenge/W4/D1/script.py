@@ -9,8 +9,9 @@ if len(string) == 10:
 	print(sentence_1.format(first_string,last_string))
 
 #‘Build’ the string up: print the first character, then the first 2, then the first 3, etc., until you print the entire string
-for x in string:
-	print(x)
+x=range(len(string))
+for n in x:
+	print(string[0:n+1])
 
 
 # Swap some of the characters around, then print out this jumbled-up string to the user. Be sure to label it appropriately.
