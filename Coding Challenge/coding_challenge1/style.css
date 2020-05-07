@@ -1,0 +1,148 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: linear-gradient(90deg,#27ae60, #2ecc71,#bdc3c7, #ecf0f1, #e74c3c, #c0392b);
+	background-size: 400%;
+	animation: move_background 8s infinite;
+}
+
+.container {
+  display: inline-flex;
+}
+
+/*SPRITE ANIMATION CLASSES*/
+.sprite {
+	width: 96px;
+	height: 96px;
+	overflow: hidden;
+}
+
+.image_spritesheet {
+	animation: move_spritesheet 0.9s steps(8) infinite;
+}
+
+.dance1 {
+	top: -532px; /*selecting frames*/
+	position: relative;
+}
+
+.dance2 {
+	top: -645px; /*selecting frames*/
+	position: relative;
+}
+
+/*LOADING CLASSES*/
+.wave
+{
+	position: relative;
+	display:flex;
+}
+
+.wave span
+{
+	color: #fff;
+	margin: 0 15px;
+	font-size: 6em;
+	font-weight: bold;
+	font-family: monospace;
+	animation: move_wave 3.0s linear infinite;
+	transform: translate(bottom);
+}
+
+.wave span:nth-child(1)
+{
+	animation-delay: 0s;
+}
+.wave span:nth-child(2)
+{
+	animation-delay: 0.2s;
+}
+.wave span:nth-child(3)
+{
+	animation-delay: 0.4s;
+}
+.wave span:nth-child(4)
+{
+	animation-delay: 0.6s;
+}
+.wave span:nth-child(5)
+{
+	animation-delay: 0.8s;
+}
+.wave span:nth-child(6)
+{
+	animation-delay: 1.0s;
+}
+.wave span:nth-child(7)
+{
+	animation-delay: 1.2s;
+}
+.wave span:nth-child(8)
+{
+	animation-delay: 1.4s;
+}
+.wave span:nth-child(9)
+{
+	animation-delay: 1.6s;
+}
+.wave span:nth-child(10)
+{
+	animation-delay: 1.8s;
+}
+
+
+@keyframes move_background 
+{
+	0%
+	{
+		background-position: 0% 50%;
+	}
+	50%
+	{
+		background-position: 100% 50%;
+	}
+	100%
+	{
+		background-position: 0% 50%;
+	}
+}
+
+
+/*SPRITEFUNCTION*/
+@keyframes move_spritesheet 
+{
+	from{
+		transform: translate3d(0px,0,0)
+	}
+	to{
+		transform: translate3d(-100%,0,0)
+	}
+}
+
+/*WAVEFUNCTION*/
+@keyframes move_wave
+{
+	0%
+	{
+		text-shadow: 0 0 10px rgba(0,0,0,0);
+		transform: scale(1);
+	}
+	40%
+	{
+		text-shadow: 0 10px 20px rgba(0,0,0,0.5);
+		transform: scale(1.4);
+	}
+	80%,100%
+	{
+		text-shadow: 0 0 10px rgba(0,0,0,0);
+		transform: scale(1);
+	}
+}
+
+
+
