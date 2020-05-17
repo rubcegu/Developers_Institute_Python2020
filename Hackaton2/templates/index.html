@@ -1,0 +1,71 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='index.css')}}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+{% endblock %}
+
+{% block content %}
+<!--  -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">FINDASH</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+      <a class="nav-item nav-link" href="{{ url_for('signup') }}">Sign Up</a>
+    </div>
+  </div>
+</nav>
+<!-- INTRO-->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">WELCOME TO FINDASH</h1>
+    <p class="lead">The world’s most powerful data lives on FINDASH, the premier source for financial, economic, and alternative datasets, serving investment professionals.</p>
+  </div>
+</div>
+<!-- INFO DECK -->
+<div class="card-columns">
+  <div class="card">
+    <img src="https://i0.wp.com/ventsmagazine.com/wp-content/uploads/2019/12/day-trading-plus500.jpg?fit=1920%2C1080&ssl=1" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Find financial and economic information!</h5>
+      <p class="card-text">FINDASH is financial data and analytics platform for researching stocks and understanding market trends</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://secureservercdn.net/166.62.107.55/bbe.8a5.myftpupload.com/wp-content/uploads/2017/05/stock-photo-5547354-financial-newspaper-series-1200x630.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Personalize your news feed!</h5>
+      <p class="card-text">Create dozens of custom watchlists across news sources</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://www.simplekpi.com/Content/Images/KPIDashboardExamples/financial-dashboard.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Create your ANALYSIS DASHBOARD!</h5>
+      <p class="card-text">Tailor your dashboard using specific data points that fit your unique investment management style and personal preferences.</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<!--GRAPH CONTAINERS-->
+<div class="container">
+  <hr class="my-4">
+  <span>FUNDAMENTALS</span>
+  <hr class="my-4">
+<!--GRAPH CONTAINERS-->
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+<div id="chartdiv"></div>
+<!--  -->
+<script type="text/javascript" src="{{url_for('.static', filename='index.js')}}"></script>
+{% endblock %}
